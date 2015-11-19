@@ -32,12 +32,12 @@ Data Processing
 
 Visualization Design
 ---
-- Design 1: Coordinated multiple view: bar chart, pie chart and legend.
-- 
+- Design 1: Coordinated multiple views: bar chart, pie chart and legend.
+![coordinated multiple views](img/barpie.png)
 - Design 2: Area chart with brush shows time varying specific type.
-
+![area chart](img/area.png)
 - Design 3: Heat Maps 1) Population density  2)Fire incident density
-
+![map](img/map.png)
 Must-Have Features
 ---
 - Map of Seattle, with location info marked on it to show the relation between location and fire happening frequency.
