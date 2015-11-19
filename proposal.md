@@ -33,7 +33,7 @@ Data Processing
 Visualization Design
 ---
 - Design 1: Coordinated multiple view: bar chart, pie chart and legend.
-
+- 
 - Design 2: Area chart with brush shows time varying specific type.
 
 - Design 3: Heat Maps 1) Population density  2)Fire incident density
