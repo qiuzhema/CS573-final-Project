@@ -1,7 +1,7 @@
 Final Project - Interactive Data Visualization - Proposal
 ===
 
-Basic Info.
+Basic Information
 ---
 - Project title: Seattle Fire Emergency Analysis
 - Team members: Qianyun Yang, qyang@wpi.edu, xiaoyouyang;
