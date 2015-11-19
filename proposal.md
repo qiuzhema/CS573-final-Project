@@ -6,6 +6,7 @@ Basic Information
 - Project title: Seattle Fire Emergency Analysis
 - Team members: Qianyun Yang, qyang@wpi.edu, xiaoyouyang;
                 Qiuzhe Ma, qma2@wpi.edu, qiuzhema
+- Link to Public Reposiory: https://github.com/qiuzhema/CS573_FINAL
 
 Background and Motivation 
 ---
@@ -18,8 +19,11 @@ The world has in the past decades experienced succession of fire disasters. Thes
 Data
 ---
 The first data we collected is named Seattle Real Time Fire 911 calls. We find a website that describe Seattle real time fire 911 calls from 2010 to now. The data will update every minute and we choose the dataset from 1/1/2010 to 11/17/2015. The dataset includes information such as address, type, date time, latitude, longitude, report location and incident number. The second data we find is Seattle population because we also want to find the relationship between density of fire incidents and density of population of Seattle. The population density in Seattle includes population density and location information in 2015. The third data we find is the map of Seattle in json file. Here are the links to the website where we find our data:
+
 Fire Calls Link: https://data.seattle.gov/Public-Safety/Seattle-Real-Time-Fire-911-Calls/kzjm-xkqj
+
 Seattle Map Link: https://catalog.data.gov/dataset/seattle-json
+
 Seattle Population Link: http://www.arcgis.com/home/webmap/viewer.html?webmap=cdf24bce6363445e83670a6ea42f5dbe
 
 Data Processing
