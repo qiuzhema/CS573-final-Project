@@ -8,8 +8,8 @@ Basic Information
                 Qiuzhe Ma, qma2@wpi.edu, qiuzhema
 - Link to Public Reposiory: https://github.com/qiuzhema/CS573_FINAL
 - ["Bar & Pie & Legend"](http://qiuzhema.github.io/DataVisFinal/testno.html)
-- ["Area Diagram"](http://qiuzhema.github.io/05-Experiment/area.html)
-- ["Map"](http://qiuzhema.github.io/05-Experiment/map.html)
+- ["Area Diagram"](http://qiuzhema.github.io/DataVisFinal/area.html)
+- ["Map"](http://qiuzhema.github.io/DataVisFinal/map.html)
 
 
 Background and Motivation 
