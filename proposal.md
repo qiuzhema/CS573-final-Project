@@ -7,7 +7,9 @@ Basic Information
 - Team members: Qianyun Yang, qyang@wpi.edu, xiaoyouyang;
                 Qiuzhe Ma, qma2@wpi.edu, qiuzhema
 - Link to Public Reposiory: https://github.com/qiuzhema/CS573_FINAL
-
+- ["Bar & Pie & Legend"](http://qiuzhema.github.io/DataVisFinal/testno.html)
+- ["Area Diagram"](http://qiuzhema.github.io/05-Experiment/area.html)
+- ["Map"](http://qiuzhema.github.io/05-Experiment/map.html)
 Background and Motivation 
 ---
 Our final project is about fire emergency happened in Seattle from 2012 to 2015. The existence of fire changes our life and behavior. We need fire to cook, to keep warm and fire is also necessary in manufacture. But if people are not cautious about fire, it may lead to disasters. Each year people die or are seriously injured as a result of fires at work. Besides loss of life, fire costs people millions of money from damage of property, loss of business, fire compensation and insurance premiums. Many of these fires can be avoided by taking fire precautions. If a fire breaks out a lot of the effects can be minimized by having effective controls and procedures in place. This project therefore intends to make an assessment of the factors influencing fire disaster preparedness. We consider that our analysis may provide valuable information to improve allocation of fire resources, and remind people about the fire prevention in effective ways. 
