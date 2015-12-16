@@ -5,6 +5,7 @@ Team Members:
 - Qiuzhe Ma, part of coding, part of process book writing.
 
 Screencast: ["Screencast"](http://qiuzhema.github.io/DataVisFinal/Screencast.webm)
+
 Project link: ["Interactive Data Visualization"](http://qiuzhema.github.io/DataVisFinal/573final.html)
 
 Basic Visualizations
