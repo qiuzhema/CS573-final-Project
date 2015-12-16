@@ -3,109 +3,147 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <script src="http://d3js.org/d3.v2.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/homestyle.css" />
     <style type="text/css">
     body {
         font: 300 13px "Helvetica Neue", Helvetica;
     }
 
     #chart-container {
-	width: 1000px; 
-	margin: 0 auto 50px auto;
-	background: rgba(255,255,255,0.5);
-	box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
-	padding: 10px 30px;
+  width: 1000px; 
+  margin-top: 60px;
+  margin-left: 80px;
+  background: rgba(255,255,255,0.5);
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+  padding: 10px 30px;
     }
 
     svg {
-	font-family: 'Lato', Arial, serif;
-	font-size: 10px;
-	font-weight: 700;
-	text-shadow: 0 1px 1px rgba(255,255,255,0.8);
+  font-family: 'Lato', Arial, serif;
+  font-size: 10px;
+  font-weight: 700;
+  text-shadow: 0 1px 1px rgba(255,255,255,0.8);
     }
 
-    text.country-title {
-	font-size: 20px;
+    text.type-title {
+  font-size: 20px;
     }
 
     text.instructions {
-	font-size: 16px;
+  font-size: 16px;
     }
 
     g.context g.brush rect.background {
-	fill: rgba(0,0,0,.1);
+  fill: rgba(0,0,0,.1);
     }
 
     g.context g.axis path {
-	stroke-opacity: 0;
+  stroke-opacity: 0;
     }
 
     g.context g.axis line {
-	stroke-opacity: .1;
+  stroke-opacity: .1;
     }
 
-    g.AidResponse path.chart {
-	fill: rgba(127,201,127,0.5);
+    g.aidresponse path.chart {
+  fill: rgba(127,201,127,0.5);
     }
 
-    g.MedicResponse path.chart {
-	fill: rgba(127,201,174,0.5);
+    g.medicresponse path.chart {
+  fill: rgba(127,201,174,0.5);
     }
 
-    g.AutoFireAlarm path.chart {
-	fill: rgba(127,183,201,0.5);
+    g.autofirealarm path.chart {
+  fill: rgba(173,151,142,0.5);
     }
 
-    g.TranstoAMR path.chart {
-	fill: rgba(127,130,201,0.5);
+    g.transtoamr path.chart {
+  fill: rgba(127,130,201,0.5);
     }
 
-    g.MotorVehicleAccident path.chart {
-	fill: rgba(171,127,201,0.5);
+    g.motorvehicleaccident path.chart {
+  fill: rgba(171,127,201,0.5);
     }
 
-    g.Other path.chart{
-  fill: rgba(158,145,178,0.5);
+    g.others path.chart {
+  fill: rgba(127,183,201,0.5);
     }
 
     .axis path, .axis line {
-	fill: none;
-	stroke: #aaa;
-	shape-rendering: crispEdges;
+  fill: none;
+  stroke: #aaa;
+  shape-rendering: crispEdges;
     }
 
     .brush .extent {
-	stroke: #f09f8c;
-	fill-opacity: .125;
-	shape-rendering: crispEdges;
+  stroke: #f09f8c;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
     }
 
     g.context rect.background{
-	fill: rgb(200,200,255);
-	visibility: visible !important;
+  fill: rgb(200,200,255);
+  visibility: visible !important;
+    }
+
+  .introduction{
+        margin-top: 50px;
+        margin-left: 50px;
     }
     </style>
 </head>
 <body>
+  <body background="png/background.jpg">
+        <nav>
+        <div class="navi">
+            <button id="mobile_menu_btn" onclick="toggle()">Menu</button>
+            <ul class="pc">
+                <li><a href="573final.html">Home</a></li>
+                <li><a href="area.html">Year</a></li>
+                <li><a href="map.html">Location</a></li>
+                <li><a href="season.html">Season</a></li>
+                <li><a href="firstv.html">Type</a></li>
+            </ul>
+        </div>
+    </nav>
+ 
+    <div id="mobile_menu">
+        <ul class="mobile">
+            <li><a href="573final.html">Home</a></li>
+            <li><a href="area.html">Year</a></li>
+            <li><a href="map.html">Location</a></li>
+            <li><a href="season.html">Season</a></li>
+            <li><a href="firstv.html">Type</a></li>
+        </ul>
+    </div>
+
     <div id="chart-container">
+
+
+    <div class="introduction" style=" text-align:left;">
+                <h2>Visualization Description</h2>
+                <span class="byline">This visualization can show you the distribution of number of different types of 911 calls in a specific time range. And also you can select the time range from below.</span>
+    </div>
+
         <script type="text/javascript">
         
         var margin = {top: 10, right: 40, bottom: 150, left: 60},
         width = 940 - margin.left - margin.right,
-        height = 500 - margin.top - margin.bottom,
+        height = 780 - margin.top - margin.bottom,
         contextHeight = 50;
         contextWidth = width * .5;
-							
+              
         var svg = d3.select("#chart-container").append("svg")
                     .attr("width", width + margin.left + margin.right)
                     .attr("height", (height + margin.top + margin.bottom));
-												
+                        
         d3.csv('qianyun.csv', createChart);
-						
+            
         function createChart(data){
             var types = [];
             var charts = [];
             var maxDataPoint = 0;
-							
+              
             /* Loop through first row and get each country 
                 and push it into an array to use later */
             for (var prop in data[0]) {
@@ -115,15 +153,15 @@
                     }
                 }
             };
-							
+              
             var typesCount = types.length;
             var startMonth = data[0].Month;
             var endMonth = data[data.length - 1].Month;
             var chartHeight = height * (1 / typesCount);
-							
+              
             /* Let's make sure these are all numbers, 
                 we don't want javaScript thinking it's text 
-							
+              
                 Let's also figure out the maximum data point
                 We'll use this later to set the Y-Axis scale
             */

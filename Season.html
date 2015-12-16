@@ -1,0 +1,75 @@
+<html>
+    <head>
+
+        <script type="text/javascript" src="http://d3js.org/d3.v2.min.js"></script>
+
+        <script type="text/javascript" src="js/makeMultiTable.js"></script>
+        <script type="text/javascript" src="js/setupPlot.js"></script>
+        <script type="text/javascript" src="js/drawLinePlot.js"></script>
+        <script type="text/javascript" src="js/toggleStat.js"></script>
+
+        <script type="text/javascript" src="js/load_qtrly_stats.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/line_plot.css" /> 
+        <link rel="stylesheet" type="text/css" href="css/table.css" /> 
+        <link rel="stylesheet" type="text/css" href="css/homestyle.css" />
+    </head>
+
+    <body>
+        <body background="png/background.jpg">
+        <nav>
+        <div class="navi">
+            <button id="mobile_menu_btn" onclick="toggle()">Menu</button>
+            <ul class="pc">
+                <li><a href="573final.html">Home</a></li>
+                <li><a href="area.html">Year</a></li>
+                <li><a href="map.html">Location</a></li>
+                <li><a href="season.html">Season</a></li>
+                <li><a href="firstv.html">Type</a></li>
+            </ul>
+        </div>
+    </nav>
+ 
+    <div id="mobile_menu">
+        <ul class="mobile">
+            <li><a href="573final.html">Home</a></li>
+            <li><a href="area.html">Year</a></li>
+            <li><a href="map.html">Location</a></li>
+            <li><a href="season.html">Season</a></li>
+            <li><a href="firstv.html">Type</a></li>
+        </ul>
+    </div>
+
+    <div id="table"></div>
+
+    <div class ="title">Q1 &nbsp &nbsp &nbsp Q2 &nbsp &nbsp &nbsp Q3 &nbsp &nbsp &nbsp Q4</div>
+
+    <div class = "legend">
+                        <img src="png/Q1.jpg" width="60px" height="60px" alt="Q1"></img>
+                        <img src="png/Q2.jpg" width="60px" height="60px" alt="Q2"></img> 
+                        <img src="png/Q3.jpg" width="60px" height="60px" alt="Q3"></img> 
+                        <img src="png/Q4.jpg" width="60px" height="60px" alt="Q4"></img></div>
+
+    <div id="plot"></div>
+
+    <div class = "img"><img src="png/season1.jpg" width="500px" height="400px"></img>
+        <img src="png/season2.jpg" width="500px" height="400px"></img></div>
+
+
+    <div class="introduction" style=" text-align:left;">
+                <h2>Visualization Description</h2>
+                <span class="byline">This visualization shows data based on different seasons from 2012 to 2015.</span>
+                <p>
+                By clicking on one line in the form, it shows the variation tendency of this selected type. You can click several types to show them in the figure together.
+                </p>
+                 <p>
+                To remove the selected type, you just click on this type again.
+                </p>
+                <p>
+                The two figures below shows the temperature and humidity of Seattle in 2015, which is related to the season feature. For example, summer has high temperature and high humidity.
+            </p>
+    </div>
+</body>
+
+
+</html>
