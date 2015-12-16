@@ -1,0 +1,124 @@
+body, a{
+            margin: 0px 0px;
+            padding: 0px 0px;
+            text-decoration: none;
+            color:#000;
+            font:18px MicroSoft Yahei;
+        }
+ 
+        p{
+            font:18px MicroSoft Yahei;
+            padding: 5px 10px;
+        }
+        .navi{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 65px;
+            background: #F5F7FA;
+            border: 3px solid #E6E9ED;
+            z-index: 2;
+            line-height: 65px;
+            padding-left: 10px;
+        }
+        
+ 
+        @media screen and (min-width: 570px){
+ 
+            #mobile_menu_btn{
+                display: none;
+            }
+ 
+            #mobile_menu{       
+                display: none;
+            }
+
+
+            #mobile_menu{       
+                display: none;
+            }
+
+            .pc{
+                list-style: none;
+                height: 100%;
+                margin: 0px 0px;
+                width: 900px;
+                padding-left: 10px;
+            }
+ 
+            .pc > li{
+                display: inline-block;
+                width: 100px;
+                margin: 15px 0px;
+                text-align: center;
+                border: 1px solid #ccc;
+                height: 30px;
+                line-height: 30px;
+                border-radius: 5px;
+                background: #ccc;
+                cursor: pointer;
+            }
+ 
+            .pc > li:hover{
+                background: #ccd;
+            }
+ 
+        }
+ 
+        @media screen and (max-width: 569px){
+ 
+            #mobile_menu{
+                position: fixed;
+                left: 0px;
+                top: 65px;
+                width: 300px;
+                background: rgba(200,200,200,0.1);
+                z-index: 0;
+                height: 800px;
+                display: block;
+            }
+ 
+            .mobile{
+                list-style: none;
+                padding: 0px 10px;
+            }
+ 
+            .mobile li{
+                margin: 10px 0px;
+                width: 100%;
+                border-bottom: 1px solid #ccc;
+                border-radius: 5px;
+                background: #ccc;
+                padding:5px 5px;
+                cursor: pointer;
+            }
+ 
+                .mobile > li:hover{
+                background: #ccd;
+            }
+            #mobile_menu_btn{
+                border:1px solid #ccc;
+                border-radius: 5px;
+                width: 50px;
+                height: 50px;
+                outline: none;
+                transition-duration: 1s;
+            }
+ 
+            #mobile_menu_btn:hover{
+                -webkit-transform: rotate(360deg);
+                background: #aab;
+                cursor: pointer;
+            }
+
+ 
+            .pc{
+                display: none;
+            }
+
+            .pc{
+                display: none;
+            }
+ 
+        }

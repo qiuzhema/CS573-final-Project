@@ -1,0 +1,24 @@
+#four-cols {width:100%; margin-left:100px; margin-right:70px; padding:45px 0 40px 0;}
+
+.col1 { float:left; display:inline; width:230px; margin-right:50px; padding:10px 0;  color:white;}
+.col2 { float:left; display:inline; width:230px; margin-right:50px; padding:10px 0; }
+.col3 { float:left; display:inline; width:230px; margin-right:50px; padding:10px 0; }
+.col4 { float:left; display:inline; width:230px; margin-right:50px; padding:10px 0; color:white;}
+
+.col h3 { padding-bottom:10px; }
+.col p { padding-bottom:10px; }
+
+
+.ico { background-repeat:no-repeat; background-position:0 1px; padding-left:26px; }
+
+#footer { height:57px; line-height:56px; margin-top:180px;}
+#footer span{ color:#cfcfcf; padding:0 5px;}
+#footer a{ color:#5c5c5c; text-decoration: none; color:white;}
+#footer a:hover{ color:#0184c4;}
+.left, .alignleft { float:left; display:inline; }
+.right, .alignright { float:right; display:inline;color:white; }
+
+.process{
+	margin-left: 300px;
+}
+

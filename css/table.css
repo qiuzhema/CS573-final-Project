@@ -1,0 +1,59 @@
+th, td {
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size:0.8em;
+    padding-left:7px;
+    padding-right:7px;
+    padding-top:4px;
+    padding-bottom:4px;
+    vertical-align:middle;
+    text-align:center;
+}
+
+th {
+    color:white;
+    background-color:steelblue;
+}
+
+
+td {
+    border:1px solid steelblue;
+}
+
+td.rowkey {
+    text-align:left;
+}
+
+
+tr:hover {
+    color:#000000;
+    background-color:#E0E0E0;
+}
+
+
+tr[chosen=true] {
+    background-color:#B5CDE1;
+}
+
+#table{
+    margin-top: 100px;
+    margin-left: 120px;
+}
+
+.introduction{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+
+.img { 
+    padding-left: 50px;
+    margin-left: 60px; 
+    }
+
+.title { 
+    margin-left: 470px; 
+    }
+
+.legend { 
+    margin-left: 450px; 
+    }

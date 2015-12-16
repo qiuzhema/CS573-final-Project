@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<body>
+  <body background="png/background.jpg">
+  <nav>
+        <div class="navi">
+            <button id="mobile_menu_btn" onclick="toggle()">Menu</button>
+            <ul class="pc">
+                <li><a href="573final.html">Home</a></li>
+                <li><a href="area.html">Year</a></li>
+                <li><a href="map.html">Location</a></li>
+                <li><a href="season.html">Season</a></li>
+                <li><a href="firstv.html">Type</a></li>
+            </ul>
+        </div>
+    </nav>
+ 
+    <div id="mobile_menu">
+        <ul class="mobile">
+            <li><a href="573final.html">Home</a></li>
+            <li><a href="area.html">Year</a></li>
+            <li><a href="map.html">Location</a></li>
+            <li><a href="season.html">Season</a></li>
+            <li><a href="firstv.html">Type</a></li>
+        </ul>
+    </div>
+
+  <div id="choose">
+  <select onchange="loadFirstData()" id="firstid">
+      <option >2012</option>
+      <option >2013</option>
+      <option >2014</option>
+      <option >2015</option>
+  </select></div>
+
+<div id='dashboard'></div>
+
+<div class="introduction" style=" text-align:left;">
+                <h2>Visualization Description</h2>
+                <span class="byline">First, for each year the donut chart shows the distribution of amount of different type of calls in this year. If you mouse on one type in the donut chart, the bar chart will show the number of this type of 911 calls of each month.
+                </span>
+                <p>
+                  Second, for each year the bar chart shows the distribution of amount of 911 calls in this year. If you mouse on one bar in the bar chart, the donut chart will show the distribution of different types in this month.
+                </p>
+    </div>
+</body>
+
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="js/firstpart.js"></script>
+<link rel="stylesheet" type="text/css" href="css/firststyle.css" /> 
+<link rel="stylesheet" type="text/css" href="css/homestyle.css" />
+</html>
